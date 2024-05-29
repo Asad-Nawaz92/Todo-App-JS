@@ -4,27 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo App</title>
+    <title>Todo List App</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="./images/icon.png">
 </head>
 
-<body class="container bg-dark ">
-
-    <div class="m-3">
-        <input class="form-control" type="text" name="" id="inp"> <br>
-        <button class="btn btn-primary" onclick="addtodo()">Send</button>
-        <button class="btn btn-danger" onclick="deleteall()">Delete All</button> <br><br>
-
-        <ul style="list-style: none;" class="text-center text-light " id="ul">
-
-        </ul>
-
+<body class="container bg-dark text-light">
+    <div class="text-center my-5">
+        <h1 class="mt-5">Todo List App</h1>
+        <div class="input-group my-4 mx-auto" style="max-width: 600px;">
+            <input class="form-control" type="text" id="inp" placeholder="Add a new task">
+            <button class="btn btn-primary" onclick="addtodo()">Add Item</button>
+            <button class="btn btn-danger" onclick="deleteall()">Delete All</button>
+        </div>
     </div>
 
+    <ul style=list-style:none; class="mx-auto text-center" style="max-width: 600px;" id="ul"></ul>
 
+    <!-- <footer style="background-color: black; max-width: 600px; font-size: 15px; " class="text-center p-1 my-0 mx-auto text-light">
+        <div style="font-size: 1.5rem;" class="pt-2">
+            <a href="https://github.com/Asad-Nawaz92" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/asad-nawaz-bb520a244/" target="_blank"><i
+                    class="fa-brands px-2 py-2 fa-linkedin"></i></a>
+        </div>
+        <div class="text-center text-light">
+            <p>Designed and Developed by Asad Nawaz | &copy; 2024 All Rights Reserved.</p>
+        </div>
+    </footer> -->
 
     <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
